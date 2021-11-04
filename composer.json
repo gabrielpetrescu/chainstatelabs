@@ -1,0 +1,16 @@
+{
+    "name": "chainstatelabs/website",
+    "description": "ChainStateLabs presentation website",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "^6.5"
+    },
+    "license": "chainstatelabs",
+    "authors": [
+        {
+            "name": "Gabriel Petrescu",
+            "email": "gabriel.petrescu@developdesk.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

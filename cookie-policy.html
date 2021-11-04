@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Chain State Labs - Cookie</title>
     <meta charset="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=""/>
 
+    <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,12 +23,12 @@
     <div class="menu-bg">
         <div class="container menu-container">
             <nav class="navbar navbar-expand-sm p-0">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/">
                     <img class="d-none d-sm-block" src="img/logo.svg" alt="Logo">
                     <img class="d-block d-sm-none" src="img/logo-mobile.svg" alt="Logo">
                 </a>
 
-                <button  class="menu navbar-toggler menu-toggle" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'));openNav();" >
+                <button  class="menu navbar-toggler menu-toggle" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'));openCloseNav();" >
                     <svg width="55" height="55" viewBox="0 0 100 100">
                         <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
                         <path class="line line2" d="M 20,50 H 80" />
@@ -37,20 +40,20 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li><a href="#" class="nav-link">About</a></li>
-                        <li ><a href="#" class="nav-link">Infrastructure</a></li>
-                        <li><a href="#" class="nav-link">Contact Us</a></li>
+                        <li><a href="/#about" class="nav-link">About</a></li>
+                        <li ><a href="/#infrastructure" class="nav-link">Infrastructure</a></li>
+                        <li><a href="/#contact" class="nav-link">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </div>
-    <div id="myNav" class="overlay">
+    <div id="chainNav" class="overlay">
         <div class="overlay-content">
             <ul class="navbar-nav">
-                <li><a href="#" class="nav-link">About</a></li>
-                <li ><a href="#" class="nav-link">Infrastructure</a></li>
-                <li><a href="#" class="nav-link">Contact Us</a></li>
+                <li><a href="/#about" class="nav-link">About</a></li>
+                <li ><a href="/#infrastructure" class="nav-link">Infrastructure</a></li>
+                <li><a href="/#contact" class="nav-link">Contact Us</a></li>
             </ul>
         </div>
     </div>

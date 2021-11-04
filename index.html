@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Chain State Labs - Homepage</title>
     <meta charset="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=""/>
 
+    <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico'/>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,7 +17,7 @@
 
 </head>
 
-<body  id="home">
+<body id="home">
 <div class="balls">
 
 
@@ -25,37 +29,37 @@
                     <img class="d-block d-sm-none" src="img/logo-mobile.svg" alt="Logo">
                 </a>
 
-                <button  class="menu navbar-toggler menu-toggle" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'));openNav();" >
+                <button class="menu navbar-toggler menu-toggle"
+                        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'));openCloseNav();">
                     <svg width="55" height="55" viewBox="0 0 100 100">
-                        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                        <path class="line line2" d="M 20,50 H 80" />
-                        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        <path class="line line1"
+                              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"/>
+                        <path class="line line2" d="M 20,50 H 80"/>
+                        <path class="line line3"
+                              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"/>
                     </svg>
                 </button>
 
 
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li><a href="#" class="nav-link">About</a></li>
-                        <li ><a href="#" class="nav-link">Infrastructure</a></li>
-                        <li><a href="#" class="nav-link">Contact Us</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#infrastructure" class="nav-link">Infrastructure</a></li>
+                        <li><a href="#contact" class="nav-link">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </div>
-    <div id="myNav" class="overlay">
+    <div id="chainNav" class="overlay">
         <div class="overlay-content">
             <ul class="navbar-nav">
-                <li><a href="#" class="nav-link">About</a></li>
-                <li ><a href="#" class="nav-link">Infrastructure</a></li>
-                <li><a href="#" class="nav-link">Contact Us</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#infrastructure" class="nav-link">Infrastructure</a></li>
+                <li><a href="#contact" class="nav-link">Contact Us</a></li>
             </ul>
         </div>
     </div>
-
-
 
 
     <div class="container">
@@ -65,18 +69,21 @@
             <div class="row">
                 <div class="col-8">
                     <h1>Secure <span>staking</span>, <span>simplified</span>. <br> For everyone.</h1>
-                    <p class="d-none d-sm-block">Chain State Labs is strongly supporting industry-leading teams with funding and digital asset staking solutions, aiming to help the entire ecosystem reach the next level.</p>
+                    <p class="d-none d-sm-block">Chain State Labs is strongly supporting industry-leading teams with
+                        funding and digital asset staking solutions, aiming to help the entire ecosystem reach the next
+                        level.</p>
                     <a class="main-btn d-none d-sm-inline-block" href="#">
                         Stake now
                         <img class="img-fluid" src="img/arrow-right.svg" alt="Arrow">
                     </a>
                 </div>
                 <div class="col-4 pt-4">
-                    <img class="img-fluid atom d-none d-sm-block" src="img/frame.svg" alt="Atom">
+                    <img class="img-fluid atom d-none d-sm-block" src="img/Frame.svg" alt="Atom">
                     <img class="img-fluid atom d-block d-sm-none" src="img/frame-mobile.svg" alt="Atom">
                 </div>
                 <div class="col-12 d-block d-sm-none">
-                    <p>Chain State Labs is strongly supporting industry-leading teams with funding and digital asset staking solutions, aiming to help the entire ecosystem reach the next level.</p>
+                    <p>Chain State Labs is strongly supporting industry-leading teams with funding and digital asset
+                        staking solutions, aiming to help the entire ecosystem reach the next level.</p>
                     <a class="main-btn" href="#">
                         Stake now
                         <img class="img-fluid" src="img/arrow-right.svg" alt="Arrow">
@@ -86,7 +93,7 @@
         </div>
 
 
-        <div class="stats">
+        <div class="stats" id="about">
             <div class="stats-box">
                 <p>Chain State Labs offers secure and reliable staking services for both the enterprise and retail
                     investors. We’re focused on providing you with the best solution for generating revenue, so that
@@ -117,8 +124,7 @@
         </div>
 
 
-
-        <div class="infrastructure">
+        <div class="infrastructure" id="infrastructure">
             <div class="row">
                 <div class="col-sm-7 col-lg-9 order-2 order-sm-1">
                     <h2>Risk-free Staking</h2>
@@ -168,14 +174,14 @@
         </div>
 
 
-
-
-        <div class="blog">
+        <div class="blog" id="blog">
             <div class="row text-center">
                 <div class="col-12">
                     <h2>Latest blog posts</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, ipsum at id semper in in est. Tincidunt laoreet venenatis eu blandit. Cras ut diam, quam tincidunt. Velit, quam elementum iaculis quis.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, ipsum at id semper in in est.
+                        Tincidunt laoreet venenatis eu blandit. Cras ut diam, quam tincidunt. Velit, quam elementum
+                        iaculis quis.
                     </p>
                 </div>
             </div>
@@ -187,7 +193,8 @@
                         <div class="blog-box">
                             <p class="article-section">Article section</p>
                             <p class="article-title">Article title goes here on 2 rows...</p>
-                            <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam, in nisi, tempor habitasse purus sed ...</p>
+                            <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nullam diam, in nisi, tempor habitasse purus sed ...</p>
                             <div class="separator-line"></div>
 
                             <div class="row">
@@ -208,7 +215,8 @@
                         <div class="blog-box">
                             <p class="article-section">Article section</p>
                             <p class="article-title">Article title goes here on 2 rows...</p>
-                            <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam, in nisi, tempor habitasse purus sed ...</p>
+                            <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nullam diam, in nisi, tempor habitasse purus sed ...</p>
                             <div class="separator-line"></div>
 
                             <div class="row">
@@ -229,7 +237,8 @@
                         <div class="blog-box">
                             <p class="article-section">Article section</p>
                             <p class="article-title">Article title goes here on 2 rows...</p>
-                            <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam, in nisi, tempor habitasse purus sed ...</p>
+                            <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nullam diam, in nisi, tempor habitasse purus sed ...</p>
                             <div class="separator-line"></div>
 
                             <div class="row">
@@ -250,7 +259,8 @@
                         <div class="blog-box">
                             <p class="article-section">Article section</p>
                             <p class="article-title">Article title goes here on 2 rows...</p>
-                            <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam, in nisi, tempor habitasse purus sed ...</p>
+                            <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nullam diam, in nisi, tempor habitasse purus sed ...</p>
                             <div class="separator-line"></div>
 
                             <div class="row">
@@ -278,13 +288,13 @@
         </div>
 
 
-
         <div class="contact">
             <div class="row text-center">
                 <div class="col-12">
                     <h2>Looking for support?</h2>
                     <p>
-                        Whether you’re a seasoned investor or you’re just starting your journey into the disruptive world
+                        Whether you’re a seasoned investor or you’re just starting your journey into the disruptive
+                        world
                         of blockchain, if you have absolutely ANY questions, inquiries or requests, we’re here to answer
                         all of them. Just let us know what’s all about and we’ll make sure to answer!
                         In the meantime, just make sure to stay safe and avoid scams!
@@ -292,41 +302,53 @@
                 </div>
             </div>
 
-            <div class="contact-form">
-                <div role="form" dir="ltr">
-
-                    <div class="row">
-                        <div class="col-sm-6 padd">
-                            <label>
-                                <input type="text" name="your-name" value=""  placeholder="Name">
-                            </label>
-                        </div>
-                        <div class="col-sm-6 padd">
-                            <label>
-                                <input type="text" name="your-surname" value=""  placeholder="Surname">
-                            </label>
-                        </div>
-                        <div class="col-12 padd">
-                            <label>
-                                <input type="email" name="your-email" value=""  placeholder="Email">
-                            </label>
-                        </div>
-                        <div class="col-12 ">
-                            <label>
-                                <textarea name="your-message" cols="40" rows="10"  aria-invalid="false" placeholder="Message"></textarea>
-                            </label>
-                        </div>
-                        <div class="col-12 text-center">
-                            <div class="submitbtn">
-                                <input type="submit" value="Get in touch" class="btn-submit">
+            <div class="contact-form" id="contact">
+                <form id="chslform" method="post">
+                    <div role="form" dir="ltr">
+                        <div class="row">
+                            <div class="col-sm-6 padd">
+                                <label>
+                                    <input type="text" name="chslname" value="" placeholder="Name" >
+                                </label>
+                            </div>
+                            <div class="col-sm-6 padd">
+                                <label>
+                                    <input type="text" name="chslsurname" value="" placeholder="Surname" >
+                                </label>
+                            </div>
+                            <div class="col-12 padd">
+                                <label>
+                                    <input type="email" name="chslemail" value="" placeholder="Email" >
+                                </label>
+                            </div>
+                            <div class="col-12 ">
+                                <label>
+                                    <textarea name="chslmessage" cols="40" rows="10" aria-invalid="false"
+                                              placeholder="Message"></textarea>
+                                </label>
+                            </div>
+                            <div class="col-12 text-center">
+                                <div class="submitbtn">
+                                    <button type="submit" class="btn-submit" id="chslsubmit">Get in touch</button>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <div class="form-msg"></div>
                             </div>
                         </div>
                     </div>
-                </div>
-
+                </form>
             </div>
 
         </div>
+
+
+
+
+
+
+
+        <!--End mc_embed_signup-->
 
 
         <div class="pb-3">
@@ -339,7 +361,9 @@
                     <div class="col-sub">
                         <div class="subscribe-wrapper">
                             <label for="email" class="sr-only">Email</label>
-                            <input type="email" id="email" placeholder="Email">
+                            <form action="https://cslabs.us5.list-manage.com/subscribe/post?u=25aa2c29c35af74bf0f6d4686&amp;id=17bd28cdd5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <input type="email" value="" name="EMAIL" class="email" id="email" placeholder="Email" required>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -349,10 +373,8 @@
 
     </div>
 
-<!--END BALLS BG-->
+    <!--END BALLS BG-->
 </div>
-
-
 
 
 <footer>
@@ -366,17 +388,17 @@
 
                 <a href="#" class="social-icon twitter">
                     <img class="img-fluid" src="img/twitter.png" alt="Twitter">
-                    <img class="img-top img-fluid" src="img/twitter-hover.png"  alt="Twitter">
+                    <img class="img-top img-fluid" src="img/twitter-hover.png" alt="Twitter">
                 </a>
 
                 <a href="#" class="social-icon telegram">
                     <img class="img-fluid" src="img/telegram.png" alt="Twitter">
-                    <img class="img-top img-fluid" src="img/telegram-hover.png"  alt="Twitter">
+                    <img class="img-top img-fluid" src="img/telegram-hover.png" alt="Twitter">
                 </a>
 
                 <a href="#" class="social-icon facebook">
                     <img class="img-fluid" src="img/facebook.png" alt="Twitter">
-                    <img class="img-top img-fluid" src="img/facebook-hover.png"  alt="Twitter">
+                    <img class="img-top img-fluid" src="img/facebook-hover.png" alt="Twitter">
                 </a>
             </div>
         </div>
@@ -390,7 +412,7 @@
                         © 2021, Chain State Labs
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="cookie-policy.html">
                             Cookie Policy
                         </a>
                     </li>
@@ -412,10 +434,19 @@
 </footer>
 
 
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"
+        crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
