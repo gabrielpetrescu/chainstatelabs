@@ -6,8 +6,6 @@ function openCloseNav() {
         document.getElementById("chainNav").style.height = "100%";
         jQuery('#chainNav').addClass('navopen');
     }
-    
-
 }
 
 $(function() {
@@ -51,7 +49,8 @@ if (window.matchMedia('(max-width: 768px)').matches)
     $('.parallax-window.balls').parallax({imageSrc: 'img/balls.png'});
 
 }
-if (window.matchMedia('(max-width: 576px)').matches) {
+if (window.matchMedia('(max-width: 576px)').matches)
+{
     $('.parallax-window.gradients').parallax({imageSrc: 'img/gradients-mobile.jpg'});
     $('.parallax-window.balls').parallax({imageSrc: 'img/balls.png'});
 
