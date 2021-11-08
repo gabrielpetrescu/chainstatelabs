@@ -6,6 +6,8 @@ function openCloseNav() {
         document.getElementById("chainNav").style.height = "100%";
         jQuery('#chainNav').addClass('navopen');
     }
+    
+
 }
 
 $(function() {
@@ -37,6 +39,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+if (window.matchMedia('(min-width: 769px)').matches)
+{
+    $('.parallax-window.gradients').parallax({imageSrc: 'img/gradients.jpg'});
+    $('.parallax-window.balls').parallax({imageSrc: 'img/balls.png'});
+}
+
+if (window.matchMedia('(max-width: 768px)').matches)
+{
+    $('.parallax-window.gradients').parallax({imageSrc: 'img/gradients-tablet.jpg'});
+    $('.parallax-window.balls').parallax({imageSrc: 'img/balls.png'});
+
+}
+if (window.matchMedia('(max-width: 576px)').matches) {
+    $('.parallax-window.gradients').parallax({imageSrc: 'img/gradients-mobile.jpg'});
+    $('.parallax-window.balls').parallax({imageSrc: 'img/balls.png'});
+
+}
+    
+    
 jQuery(document).ready(function ($){
 
     $("#chainNav .nav-link").click(function (){
@@ -86,4 +107,10 @@ jQuery(document).ready(function ($){
         });
     }
 });
+
+
+
+
+
+
 

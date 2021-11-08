@@ -1,3 +1,14 @@
+
+
+
+
+
+body, html {
+    height: 100%;
+    position: relative;
+}
+
+
 body{
     font-family: 'Barlow', sans-serif;
     font-style: normal;
@@ -147,15 +158,22 @@ a:hover{
 }
 
 
-#home{
-    background-image:url('../img/gradients.jpg');
+.gradients{
     background-size: cover;
     background-position: top center;
 }
+
+
+
+
+
+
+
+
 .balls{
-    background-image:url('../img/balls.png');
+    z-index: 1;
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
 }
 .menu-bg{
     background-image:url('../img/menu-background.png');
@@ -699,3 +717,13 @@ body .wpcf7-not-valid-tip{
         margin-right: -20px;
     }
 }
+
+
+
+
+
+
+
+
+
+
