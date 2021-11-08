@@ -71,17 +71,19 @@ jQuery(document).ready(function ($){
     });
 
 
-    fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@lucianmincu")
-        .then((res) => res.json())
-        .then((data) => {
-            const res = data.items;
-            const posts = res.filter(item => item.categories.length > 0).sort((a, b) => {
-                return new Date(b.pubDate) - new Date(a.pubDate);
-            });
-            console.log(posts.shift());
+
+    if($("#blog-post-container").length > 0){
+
+        var posts_url = "blogPosts.php";
+
+        $.ajax({
+            type: "POST",
+            url: posts_url,
+            data: {'get-posts':1},
+            success: function (data) {
+                $("#blog-post-container").prepend(data);
+            }
         });
-
-
-
+    }
 });
 

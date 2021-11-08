@@ -335,6 +335,7 @@ p.stats-yellow{
     background-color: white;
     padding: 16px;
     margin: 30px 0 ;
+    min-height: 254px;
 }
 .article-section{
     font-weight: 500;
@@ -347,6 +348,7 @@ p.stats-yellow{
     color: #03045E;
     line-height: 20px;
     padding: 8px 0;
+    min-height: 96px;
 }
 .article-description{
     font-size: 15px;
