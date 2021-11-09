@@ -10,6 +10,7 @@ import State from 'components/State';
 import { faCircleNotch } from '@fortawesome/free-solid-svg-icons';
 import { getItem } from 'storage/session';
 import loginBackground from "assets/images/login-background.jpg";
+import loginBackgroundMobile from "assets/images/login-background-mobile.jpg";
 
 const Dashboard = () => {
   const {
@@ -60,19 +61,35 @@ const Dashboard = () => {
     return <Redirect to="/" />;
   }
   return (
-    <div className="dashboard d-card w-100" style={{ backgroundImage: `url(${loginBackground})` }}>
-      <div className=" border-0">
-        <Overview />
-        {networkConfig.roundDuration === -1 ? (
-          <State icon={faCircleNotch} iconClass="fa-spin text-primary" />
-        ) : (
-          <div className="card-body pt-0 px-spacer pb-spacer">
-            <Delegation />
-            <PendingUndelegated />
+      <div>
+        <div className="dashboard d-card w-100 d-none d-md-block" style={{ backgroundImage: `url(${loginBackground})` }}>
+          <div className=" border-0">
+            <Overview />
+            {networkConfig.roundDuration === -1 ? (
+              <State icon={faCircleNotch} iconClass="fa-spin text-primary" />
+            ) : (
+              <div className="card-body pt-0 px-spacer pb-spacer">
+                <Delegation />
+                <PendingUndelegated />
+              </div>
+            )}
           </div>
-        )}
+        </div>
+
+        <div className="dashboard d-card w-100 d-block d-md-none " style={{ backgroundImage: `url(${loginBackgroundMobile})` }}>
+          <div className=" border-0">
+            <Overview />
+            {networkConfig.roundDuration === -1 ? (
+                <State icon={faCircleNotch} iconClass="fa-spin text-primary" />
+            ) : (
+                <div className="card-body pt-0 px-spacer pb-spacer">
+                  <Delegation />
+                  <PendingUndelegated />
+                </div>
+            )}
+          </div>
+        </div>
       </div>
-    </div>
   );
 };
 
