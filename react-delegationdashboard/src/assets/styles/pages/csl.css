@@ -256,6 +256,9 @@ body .table-admin .btn.btn-primary{
     body .btn.btn-primary, body .btn.btn-link{
         font-size: 16px;
     }
+    .home .main-container{
+        height: 100vh;
+    }
 
 }
 
